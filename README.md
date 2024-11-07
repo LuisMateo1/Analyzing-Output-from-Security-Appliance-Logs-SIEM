@@ -53,7 +53,7 @@ These are 3 custom rules that will now alert when an even matching it happens. B
 
 ![Screenshot 2024-05-25 142833](https://github.com/user-attachments/assets/99aa5bcc-81ab-4479-ab81-b5b68afee94d)
 
-And I can see the new ruleset by doing: tail /etc/nsm/rules/downloaded.rules, all 3 rules were added to the rule set.
+I can see the new ruleset with: tail /etc/nsm/rules/downloaded.rules, all 3 rules were added to the rule set. And the ruleset will update with the command: rule-update 
 
 ![Screenshot 2024-05-25 143044](https://github.com/user-attachments/assets/a70cda5a-ba4a-410a-b8a1-9a0a65956252)
 
