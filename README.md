@@ -34,7 +34,7 @@ Right-clicking the Src IP field I can look up information about this IP address 
 By doing the Kibana lookup we see that there is no previous information about that IP address
 ![Screenshot 2024-05-25 134909](https://github.com/user-attachments/assets/0fea4da7-8b63-4d61-a9c6-4ba0b6fa23a2)
 #
-By right-clicking the ST field, I can update event status and categorize the event, it also shows that the (F6) key is a shortcut to doing the same for other events.
+By right-clicking the ST field, I can update the event status and categorize the event, it also shows that the (F6) key is a shortcut to doing the same for other events.
 
 ![Screenshot 2024-05-25 135041](https://github.com/user-attachments/assets/270345bb-e738-461f-b4e0-b3ad91ee9520)
 #
