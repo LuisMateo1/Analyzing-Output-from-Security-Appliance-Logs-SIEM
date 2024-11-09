@@ -15,9 +15,9 @@ The SIEM Im using is Security Onion, which includes the Snort, Suricata, and Zee
 
 ![Screenshot 2024-05-25 132725](https://github.com/user-attachments/assets/6f716e15-1fa3-4d71-b431-81e2a46281e7)
 We see that under the ST field alerts are color-coded based on priority, and the CNT field shows how many packets match that alert. 
-- Also the Event Message field shows us the ruleset that produced that match, in the case of Alert ID 3.19 the ruleset is ET(Emerging Threat) SCAN(SCAN is the alert type)
+- Also the Event Message field shows us the ruleset that produced that match, in the case of Alert ID 3.19 the ruleset is ET or Emerging Threat is a widely used IDS ruleset, and SCAN, which is the alert type, in this case being a potential outbound SSH scan. 
 - This same rule has a match for alerts 3.20 and 3.27
-- Also by clicking on an alert, we can see packet data
+- Also by clicking on an alert, displays the packet data
 #
 You can see correlated events by right-clicking the corresponding CNT field of an alert. This shows all the individual packets associated with a single event, in this case, Alert 3.27 - 3.30.
 
@@ -48,20 +48,21 @@ Events 3.90 and 3.91 both a CVE ID linked to an attempt to exploit the Shellshoc
 ![Screenshot 2024-05-25 141244](https://github.com/user-attachments/assets/c338cf0f-8f76-4fab-a7b3-edc953820b89)
 
 #
-**Custom Rules**
-These are 3 custom rules that will now alert when an even matching it happens. But they will not work if I dont update the ruleset.
+**Creating Custom Rules**
+
+These are 3 custom rules that will now alert when an even matching it happens. But they will not work if I dont update the ruleset, which is done with the command- rule-update
 
 ![Screenshot 2024-05-25 142401](https://github.com/user-attachments/assets/a944f98b-b0f9-46f0-a162-4c1ca3171ccc)
 
 ![Screenshot 2024-05-25 142833](https://github.com/user-attachments/assets/99aa5bcc-81ab-4479-ab81-b5b68afee94d)
 
-I can see the new ruleset with: tail /etc/nsm/rules/downloaded.rules, all 3 rules were added to the rule set. And the ruleset will update with the command: rule-update 
+I can see the new ruleset with: tail /etc/nsm/rules/downloaded.rules, all 3 rules were added to the ruleset.
 
 ![Screenshot 2024-05-25 143044](https://github.com/user-attachments/assets/a70cda5a-ba4a-410a-b8a1-9a0a65956252)
 
 Each rule has a header plus a body, which is enclosed in brackets. The header includes the action, protocol, source host or network, source port, direction, target host or network, and target port. The body must include at least an identifier (sid:) and a message (msg:). A local rule should have an SID of 1000000 or greater. The parts of the body are delimited by semicolons.
 #
-**Testing The New Rules**
+**Testing The Custom Rules**
 
 Now I can test the rules by pinging some IPs, and by checking Security Onion.
 
