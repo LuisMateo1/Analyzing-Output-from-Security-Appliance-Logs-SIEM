@@ -129,8 +129,8 @@ I'll do ping -c40 10.1.0.1 to ensure all the detection parameters are met
 
 ![image](https://github.com/user-attachments/assets/584717d6-0acc-41c1-94ad-f2055b5b48ec)
 
-The siem shows 20 packets were detected and based on the detection parameters. 
-- The reason it only picked up 20 packets is that it only alerted after the first 20, so starting with the 21st
+The siem shows only 20 packets were detected, because of the detection parameters. 
+- The reason it only picked up 20 packets is that it only alerted after the first 20, so starting with the 21st packet
 ![image](https://github.com/user-attachments/assets/02af81e4-0fe1-4f2f-9313-c2ac4160759f)
 
 #
