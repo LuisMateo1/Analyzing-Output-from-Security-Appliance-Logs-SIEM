@@ -1,9 +1,9 @@
 # Analyzing Output from Security Appliance Logs: Analyzing IDS logs on a SIEM
 <h3>Objectives</h3>
 
-- Analyzed data as part of security monitoring activities.
-- Implemented configuration changes to existing controls to improve security.
-- Analyzed potential indicators of compromise.
+- Analyzed data as part of security monitoring activities
+- Implemented configuration changes to existing controls to improve security
+- Analyzed potential indicators of compromise
 #
 **Security Information and Event Management System (SIEM)**
 
