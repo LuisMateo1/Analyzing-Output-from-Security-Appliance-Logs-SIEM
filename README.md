@@ -5,6 +5,11 @@
 - Implemented configuration changes to existing controls to improve security.
 - Analyzed potential indicators of compromise.
 #
+**Security Information and Event Management System (SIEM)**
+
+A SIEM is used to respond to incidents in real-time and also to perform threat hunting for incidents that might not have been detected. Both these use cases will depend on effective queries, filters, and visualizations so that analysts are presented with useful information and not overloaded by false-positive alerts.
+
+#
 **Setup**
 
 Firstly I'll be setting up the IDS, in this case, I can't set the IDS behind a firewall so instead I'll configure port mirroring so that any frames processed by the router are copied to the sensor's sniffing interface.
