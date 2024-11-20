@@ -135,4 +135,4 @@ The siem shows only 20 packets were detected, because of the detection parameter
 
 #
 
-**Summary: A Security Information and Event Management system or SIEM is a centralized log repository, with the ability to correlate logs to allow for faster detection, analysis, and response to security events and potential threats. It collects logs from various devices and security monitoring tools such as an Intrusion Detection System(IDS), or a firewall, and can recognize logs created by a single security event. These logs are then used to identify, examine, and resolve issues quickly.**
+**Summary: A Security Information and Event Management system or SIEM is a centralized log repository, with the ability to correlate logs to allow for faster detection, analysis, and response to security events and potential threats. It collects logs from various devices and security monitoring tools such as an Intrusion Detection System (IDS), or a firewall, and can recognize logs created by a single security event. These logs are then used to identify, examine, and resolve issues quickly.**
